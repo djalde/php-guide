@@ -6,3 +6,7 @@
 **/supervisord.log
 lamp/vagrant/*.log
 lamp/docker-php-apache/data/mysql/*
+
+app/iproute2/web-api/php
+app/iproute2/web-app/php/api
+app/iproute2/web-app/php/README.md

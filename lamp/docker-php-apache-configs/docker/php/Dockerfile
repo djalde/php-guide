@@ -1,4 +1,9 @@
-FROM php:apache
+FROM php:7.3-apache
 
-RUN apt -y update
+RUN apt -y update \
+  && apt install -y \
+  mariadb-client \
+  inetutils-ping
+
+# pdo_mysql package
 RUN docker-php-ext-install pdo_mysql
